@@ -42,7 +42,7 @@ def select_E(kpts1, kpts2, E_list):
         if Er<minEr:
             minEr = Er
             minIndex = i
-    return E_list[minIndex]/E_list[minIndex][2][2], Er
+    return E_list[minIndex]/E_list[minIndex][2][2], minEr
 
 def triangulate(kpts1, kpts2, P1, P2):
     x1 = kpts1[0]
